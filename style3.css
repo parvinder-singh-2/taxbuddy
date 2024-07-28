@@ -1,0 +1,216 @@
+/* style3.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    animation: slideDown 1s ease-in-out;
+}
+
+.logo img {
+    height: 60px;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+}
+
+.footer {
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer .navigation {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.footer a {
+    margin: 0 15px;
+}
+
+.footer .logo {
+    margin-bottom: 20px;
+}
+
+.footer .copyright {
+    text-align: center;
+    font-size: 14px;
+}
+
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.logo {
+    width: 100px;
+}
+
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    margin: 0 5px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #575757;
+    border-radius: 4px;
+    transform: scale(1.1);
+}
+
+.btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+    background-color: #45a049;
+    transform: scale(1.1);
+}
+
+.btn.login {
+    background-color: #008CBA;
+}
+
+.btn.login:hover {
+    background-color: #007bb5;
+}
+
+.btn.signup {
+    background-color: #f44336;
+}
+
+.btn.signup:hover {
+    background-color: #da190b;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    animation: fadeIn 1.5s;
+}
+
+.left-section, .right-section {
+    width: 48%;
+}
+
+.left-section {
+    animation: slideInLeft 1s;
+}
+
+.right-section {
+    animation: slideInRight 1s;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input, textarea, button {
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #575757;
+    transform: scale(1.1);
+}
+
+/* Animations */
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

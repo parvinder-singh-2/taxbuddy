@@ -1,0 +1,283 @@
+/* Reset some default styles */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f6f0f0;
+}
+
+.navbar {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000000;
+    padding: 10px 20px;
+    color: white;
+}
+
+.logo img {
+    height: 60px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+.btn {
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.login {
+    background-color: #007bff;
+}
+
+.signup {
+    background-color: #28a745;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.logo {
+    width: 100px;
+}
+
+.container {
+    background-color: white;
+    text-align: start;
+    width: 95%;
+    margin: 0 auto;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.left-side {
+    margin-left: 3%;
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    align-items: flex-start;
+}
+
+.left-side img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 4%;
+}
+
+.right-side {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.right-side img {
+    width: 400px;
+    height: 450px;
+}
+
+.global {
+    background-color: #f6f0f0;
+}
+
+.main-heading {
+    margin-left: 3%;
+    flex-grow: 1;
+}
+
+.main-heading h1, .main-heading h4 {
+    margin-left: 0;
+    margin-bottom: 10px;
+    color: #333;
+    margin-top: 15%;
+}
+
+.main-heading h1 {
+    font-size: 2rem;
+}
+
+.main-heading h4 {
+    font-size: 1rem;
+    color: #555;
+    animation: fadeIn 2s ease-in-out;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-left: 5px solid #007bff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Animation keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content {
+    flex: 1;
+}
+
+.footer {
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer .navigation {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.footer a {
+    margin: 0 15px;
+}
+
+.footer .logo {
+    margin-bottom: 20px;
+}
+
+
+.footer .copyright {
+    text-align: center;
+    font-size: 14px;
+}
+
+.error{
+    align-self: center;
+
+}
+
+h5{
+    width: 80%;
+    
+}
+
+.two{
+    margin-top: 3%;
+    /* General styling for the body and html */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f6f9;
+}
+
+/* Container for the two sections */
+.container {
+    display: flex;
+    width: 80%;
+    height: 80vh;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    background: hsl(0, 0%, 100%);
+}
+
+/* Styling for the left section */
+.left-section {
+    flex: 1;
+    background-color: #ffffff;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px;
+    box-sizing: border-box;
+    border-right: 1px solid #fef9f9f0;
+}
+
+.left-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.left-section h4 {
+    font-size: 1.2em;
+    line-height: 1.5;
+    color: #555;
+}
+
+/* Styling for the right section */
+.right-section {
+    flex: 1;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.right-section img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+
+
+
+
+
+
+
+}
